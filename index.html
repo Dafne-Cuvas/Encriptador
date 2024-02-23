@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <script src="js/funciones.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logo.png">
+    </header>
+    <main class="container">
+        <section class="campo-left">
+            <textarea class="campo-texto" type="text" id="texto" name="campo-texto"
+                placeholder="Ingrese el texto aqui"></textarea>
+
+            <div class="campo-footer">
+                <div class="campo-terminos">
+                    <p class="terminos"><a><img class="icon-aviso" src="img/exclamación.png"></a> Solo letras minúsculas
+                        y
+                        sin acento</p>
+                </div>
+
+                <div class="botones-left">
+                    <button id="encriptar" class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                    <button id="desencriptar" class="btn-desencriptar" type="button"
+                        onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="campo-right">
+            <img id="muñeco" class="img-muñeco" alt="" src="img/muñeco.png">
+            <textarea id="texto-encriptado" class="texto-encriptado oculto" readonly></textarea>
+            <div id="mensaje-encriptado" class="mensaje-encriptado">
+                <h2 id="titulo-right" class="titulo-right">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo-right" class="parrafo-right">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button id="boton-copiar" class="boton-copiar oculto" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <label class="autor">Dafne Cuvas</label>
+    </footer>
+
+</body>
+
+</html>
